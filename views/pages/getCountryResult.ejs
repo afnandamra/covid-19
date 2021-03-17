@@ -1,0 +1,18 @@
+<h1>Covid19 Statistics</h1>
+<hr>
+<br>
+<h2>
+    <%= days[0].country %>:
+</h2>
+<section class="index">
+    <% days.forEach(day=> { %>
+        <div>
+            <h3>
+                Date: <%= day.date %>
+            </h3>
+            <p>
+                Confirmed Cases: <%= day.cases %>
+            </p>
+        </div>
+        <% }) %>
+</section>

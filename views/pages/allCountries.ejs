@@ -1,0 +1,30 @@
+<h1>Covid19 Statistics for All Countries</h1>
+<section class="all">
+    <% countries.forEach(country=> { %>
+        <div>
+            <h3>
+                <%= country.country %>
+            </h3>
+            <p>Confirmed Cases:
+                <%= country.totalconfirmed %>
+            </p>
+            <p>Total Deaths:
+                <%= country.totaldeaths %>
+            </p>
+            <p>Total Recovered:
+                <%= country.totalrecovered %>
+            </p>
+            <p>Date:
+                <%= country.date %>
+            </p>
+            <form action="/records" method="post">
+                <input type="hidden" name="country" value="<%= country.country %>">
+                <input type="hidden" name="totalconfirmed" value="<%= country.totalconfirmed %>">
+                <input type="hidden" name="totaldeaths" value="<%= country.totaldeaths %>">
+                <input type="hidden" name="totalrecovered" value="<%= country.totalrecovered %>">
+                <input type="hidden" name="date" value="<%= country.date %>">
+                <input type="submit" value="Add to My Records">
+            </form>
+        </div>
+        <% }) %>
+</section>

@@ -1,0 +1,28 @@
+<h1>World Total Statistics:</h1>
+<hr>
+<section class="index">
+    <div>
+        <h3>Total Confirmed:</h3>
+        <p>
+            <%= world.TotalConfirmed %>
+        </p>
+    </div>
+    <div>
+        <h3>Total Deaths:</h3>
+        <p>
+            <%= world.TotalDeaths %>
+        </p>
+    </div>
+    <div>
+        <h3>Total Recovered:</h3>
+        <p>
+            <%= world.TotalRecovered %>
+        </p>
+    </div>
+</section>
+<form action="/getCountryResult" method="GET">
+    <input type="text" placeholder="Enter Country" name="country">
+    <input type="date" name="from">
+    <input type="date" name="to">
+    <input type="submit" value="Search">
+</form>

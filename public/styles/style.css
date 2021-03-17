@@ -1,0 +1,108 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #eee;
+}
+main{
+    padding: 5vw 10vw;
+}
+h1{
+    font-size: 5vh;
+    font-weight: 700;
+}
+h2{
+    font-size: 4vh;
+    font-weight: 600;
+}
+h3{
+    font-size: 2.5vh;
+    font-weight: 700;
+}
+h4{
+    font-size: 5vh;
+    font-weight: 700;
+    grid-column: 1/-1;
+}
+hr{
+    width: 50%;
+}
+.index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 5vw 5vw;
+}
+.index div{
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 10px;
+    width: 80%;
+}
+
+input{
+    width: 15vw;
+    padding: 5px;
+    height: 2vw;
+    margin: 0 1vw;
+}
+input[type="submit"]{
+    border: 0;
+    background-color: cornflowerblue;
+    width: 10vw;
+    height:3vw;
+    cursor: pointer;
+}
+.all{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 5vw 5vw;
+    line-height: 2;
+}
+.all div{
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 10px;
+}
+.detail{
+    display: grid;
+    padding: 5vw 5vw;
+    line-height: 2;
+}
+
+.detail div{
+    background-color: #fff;
+    padding: 30px;
+    justify-self: center;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: cornflowerblue;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding: 20px;
+}
+header nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+header nav a:hover{
+    color: rgb(138, 9, 9);
+}
+footer{
+    display: grid;
+    background-color: cornflowerblue;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

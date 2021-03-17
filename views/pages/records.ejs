@@ -1,0 +1,20 @@
+<h1>Covid19 Statistics for All Countries</h1>
+<section class="all">
+    <% if (countries.length> 0) { %>
+        <% countries.forEach(country=> { %>
+            <div>
+                <h3>
+                    <%= country.country %>
+                </h3>
+                <p>Date:
+                    <%= country.date %>
+                </p>
+                <form action="/details/<%= country.id %>" method="get">
+                    <input type="submit" value="Details">
+                </form>
+            </div>
+            <% }) %>
+                <% } else { %>
+                    <h4>No Available Records</h4>
+                    <% } %>
+</section>

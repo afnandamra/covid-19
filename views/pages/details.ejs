@@ -1,0 +1,21 @@
+<h1>Covid19 Statistics for <%= country.country %>
+</h1>
+<section class="detail">
+    <div>
+        <p>Confirmed Cases:
+            <%= country.totalconfirmed %>
+        </p>
+        <p>Total Deaths:
+            <%= country.totaldeaths %>
+        </p>
+        <p>Total Recovered:
+            <%= country.totalrecovered %>
+        </p>
+        <p>Date:
+            <%= country.date %>
+        </p>
+        <form action="/details/<%= country.id %>?_method=DELETE" method="post">
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+</section>
